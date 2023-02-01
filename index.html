@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="//unpkg.com/prismjs/themes/prism-solarizedlight.css"
+		/>
+		<title>PBP Wiki</title>
+	</head>
+	<body>
+		<div id="app"></div>
+
+		<!-- Importing Docsify -->
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+		<!-- Importing PrismJS highlighters -->
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-dart.min.js"></script>
+
+		<script>
+			window.$docsify = {
+				el: '#app',
+				loadSidebar: './menu.md',
+			};
+		</script>
+	</body>
+</html>
